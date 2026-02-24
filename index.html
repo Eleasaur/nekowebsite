@@ -4,43 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eleasaur's web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="script" href="script.js">
 </head>
 <body>
     <header>
-        <nav class="nav-bar">
+        <nav>
             <ul>
-                <li>
-                    <a href="#home" class="nav-bar_button"> Home </a>
-                </li>
-                <li>
-                    <a href="#about-me" class="nav-bar_button"> About me </a>
-                </li>
-                <li>
-                    <a href="#hobby-corner" class="nav-bar_button"> Hobby corner </a>
-                </li>
-                <li>
-                    <a href="#message-board" class="nav-bar_button"> Message board </a>
-                </li>
+                <li>Home</li>
+                <li>Hobbies</li>
+                <li>Media Log</li>
+                <li>Guest book</li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div id="home" class="content-container">
-            <h1>Home</h1>
-        </div>
-        <div id="about_me" class="content-container">
-            <h1>About me</h1>
-
-        </div>
-        <div id="hobby_corner" class="content-container">
-            <h1>Hobby corner</h1>
-
-        </div>
-        <div id="message_board" class="content-container">
-            <h1>Message Board</h1>
-
-        </div>
-    </main>
+    <div>
+        <h1>Home</h1>
+        <h2>Hi, I'm Eleasaur</h2>
+        <p>I built this website as a way to design something pretty and to carve out my own little nook digitally!</p>
+        <p></p>
+    </div>
+    <div>
+        <h1>Hobbies</h1>
+        <h3>Video games, Beyblade X, Reading, Card Games</h3>
+    </div>
+    <div>
+        <h1>Media Log</h1>
+        <h3>Recently I've played...</h3>
+        <h3>Recently I've watched...</h3>
+        <h3>Recently I've read...</h3>
+    </div>
+    <div>
+        <h1>Guest book</h1>
+        <form action="" method="get" class="guest-sign">
+            <div class="guest-sign">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="guest-sign">
+                <label for="site">Site (Optional)</label>
+                <input type="url" name="site" id="site">
+            </div>
+            <div class="guest-sign">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="5" cols="30" placeholder="enter message here"></textarea>
+            </div>
+            <div class="guest-sign">
+                <input type="submit" value="sign!">
+            </div>
+        </form>
+    </div>
 </body>
 <footer>
     <p>made by Eleasaur using html, css and js</p>
